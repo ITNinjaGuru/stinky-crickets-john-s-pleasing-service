@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovateTech</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: rgba(255, 255, 255, 0.2);
+            --secondary-color: rgba(255, 255, 255, 0.1);
+            --accent-color: #4A90E2;
+            --background-color: #1A1A1A;
+            --text-color: #FFFFFF;
+            --heading-font: 'Poppins', sans-serif;
+            --body-font: 'Poppins', sans-serif;
+            --spacing: 16px;
+        }
+        body {
+            margin: 0;
+            font-family: var(--body-font);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            transition: background-color 0.3s ease;
+        }
+        header {
+            padding: var(--spacing);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            backdrop-filter: blur(10px);
+            background: var(--secondary-color);
+        }
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 var(--spacing);
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: var(--accent-color);
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            backdrop-filter: blur(15px);
+            background: var(--primary-color);
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: var(--spacing);
+        }
+        .feature {
+            background: var(--primary-color);
+            border-radius: 10px;
+            padding: var(--spacing);
+            margin: var(--spacing);
+            width: calc(30% - 40px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        .contact-form {
+            text-align: center;
+            padding: var(--spacing);
+            backdrop-filter: blur(15px);
+            background: var(--primary-color);
+        }
+        footer {
+            text-align: center;
+            padding: var(--spacing);
+            backdrop-filter: blur(10px);
+            background: var(--secondary-color);
+        }
+        @media (max-width: 768px) {
+            .feature {
+                width: calc(100% - 40px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>InnovateTech</h1>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="hero" class="hero">
+        <h2>Empowering Innovation</h2>
+        <p>Leading the way in cutting-edge technology solutions for a brighter future.</p>
+    </section>
+    <section id="features" class="features">
+        <div class="feature">
+            <h3>Feature One</h3>
+            <p>Innovative AI solutions that propel your business forward.</p>
+        </div>
+        <div class="feature">
+            <h3>Feature Two</h3>
+            <p>Cloud computing solutions designed for agility and scalability.</p>
+        </div>
+        <div class="feature">
+            <h3>Feature Three</h3>
+            <p>Advanced cybersecurity measures to protect your digital assets.</p>
+        </div>
+    </section>
+    <section id="contact" class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 InnovateTech. All rights reserved.</p>
+    </footer>
+</body>
+</html>
